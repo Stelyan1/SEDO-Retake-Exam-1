@@ -4,38 +4,57 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f7f8fa
+  background: #f7f8fa;
 }
 
-/* Commit 3 */
+/* App wrapper */
 .app {
-  text-align: center
+  text-align: center;
 }
 
+/* Color input – fixed as color picker */
 #color-input {
-  padding: .5em;
-  width: 200px
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
 }
 
-#apply-btn {
+/* Buttons */
+#apply-btn,
+#random-btn {
   padding: .5em 1em;
   margin-left: .5em;
-  cursor: pointer
+  cursor: pointer;
 }
 
-/* Commit 1 */
+#apply-btn:active {
+  transform: scale(.98);
+}
+
+/* Hover effects */
+#apply-btn:hover,
+#random-btn:hover {
+  background: #eee;
+  border-color: #666;
+}
+
+/* Box styles */
 #box {
   margin-top: 1em;
   width: 150px;
   height: 150px;
   background: #ddd;
   border: 1px solid #aaa;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, .18)
+  transition: border-color .3s;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .18);
 }
 
-/* Commit 2 */
+/* Hint texts */
+.rand-hint,
 .hint {
   margin-top: .6em;
   color: #666;
-  font-size: .9em
+  font-size: .9em;
 }
