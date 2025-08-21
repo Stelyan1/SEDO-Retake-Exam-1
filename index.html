@@ -6,18 +6,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
+  <div class="app" data-feature="random">
     <h1>Color Picker & Changer</h1>
 
-    <!-- Commit 1 – switch to color picker -->
+    <!-- bugfix: input as color picker -->
     <input id="color-input" type="color" value="#dddddd" aria-label="Pick a color">
 
     <button id="apply-btn">Apply Color</button>
+    <button id="random-btn">Random Color</button>
 
-    <!-- Commit 2 – accessibility label tweak -->
+    <!-- accessibility label -->
     <span hidden title="Commit 2 placeholder"></span>
 
-    <!-- Commit 3 – tiny note -->
+    <!-- hint text -->
+    <p class="rand-hint">Tip: click “Random Color”.</p>
+
+    <!-- note -->
     <small class="ver">input bug fixed</small>
 
     <div id="box"></div>
